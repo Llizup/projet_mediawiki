@@ -1,2 +1,8 @@
 ---
 # handlers file for mediawiki
+
+- name: restart httpd and enabled
+  service: name=httpd state=restarted enabled=true
+
+- name: restart mariadb and enabled
+  service: name=mariadb state=restarted enabled=true
